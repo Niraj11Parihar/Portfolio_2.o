@@ -7,19 +7,22 @@ import {  RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { animate, motion } from "framer-motion";
 
-const iconVariants = {
-  initial: { y: -10 },
-  animate: {
-    y: [10, -10],
-    transition: {
-      duration: 1.5, 
-      ease: "easeInOut",
-      repeat: Infinity,
-      repeatType: "reverse",
-      delay: 0.3, 
+const iconVariants = (d) => {
+  return {
+    initial: { y: -10 },
+    animate: {
+      y: [10, -10],
+      transition: {
+        duration: d, 
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "reverse",
+        delay: 0.3, 
+      },
     },
-  },
+  };
 };
+
 
 export const Skills = () => {
   return (
@@ -37,7 +40,7 @@ export const Skills = () => {
         
         {/* HTML Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -47,7 +50,7 @@ export const Skills = () => {
 
         {/* CSS Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -57,7 +60,7 @@ export const Skills = () => {
 
         {/* Bootstrap Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -67,7 +70,7 @@ export const Skills = () => {
 
         {/* Tailwind CSS Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -77,7 +80,7 @@ export const Skills = () => {
 
         {/* JavaScript Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -87,7 +90,7 @@ export const Skills = () => {
 
         {/* MongoDB Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -97,7 +100,7 @@ export const Skills = () => {
 
         {/* Express Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -107,7 +110,7 @@ export const Skills = () => {
 
         {/* ReactJS Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -117,7 +120,7 @@ export const Skills = () => {
 
         {/* NodeJS Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"
@@ -127,7 +130,7 @@ export const Skills = () => {
 
         {/* MySQL Icon */}
         <motion.div
-          variants={iconVariants}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl flex justify-between border-4 border-neutral-800 p-4"

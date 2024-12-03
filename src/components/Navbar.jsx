@@ -10,10 +10,11 @@ export const Navbar = () => {
             <img className='mx-2 h-42 w-52'   src={logo} alt="" />
         </div>
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'> 
-            <FaLinkedin/>
-            <FaGithub/>
-            <FaSquareTwitter/>
-            <FaInstagram/>
+            <a href="https://www.linkedin.com/in/niraj-parihar-670a122a5/"><FaLinkedin/></a>
+            <a href="https://github.com/Niraj11Parihar"><FaGithub/></a>
+            <a href="https://www.instagram.com/n_i_r_a_j.p/"><FaInstagram/></a>
+            {/* <FaSquareTwitter/> */}
+            
         </div>
     </nav>
   )
